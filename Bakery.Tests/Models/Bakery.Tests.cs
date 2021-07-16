@@ -5,11 +5,11 @@ using Bakery.ThePastry;
 
 namespace ToDoList.Tests
 {
-  [TestClass]
+  [TestClass]  // used for test class
   public class ItemTests
   {
 
-    [TestMethod]
+    [TestMethod]  // delcalre method as test method
     public void ItemConstructor_CreatesInstanceOfBread_Bread()
     {
       Bread newBread = new Bread();
@@ -20,6 +20,11 @@ namespace ToDoList.Tests
     {
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+    [TestMethod]
+    public void TestMethod()
+    {
+      Console.WriteLine("test of a test");
     }
   }
 }
