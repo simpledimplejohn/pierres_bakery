@@ -5,29 +5,29 @@ namespace Bakery.TheBread
 {
     public class Bread
     {
-        public int breadNumber { get; set; }
+        public double breadNumber { get; set; }
 
-        private int _bread = 5;
+        private double _bread = 5;
         public void Test() 
         {
             Console.WriteLine("Bread Class Works!");
 
         }
-        public int bread {
+        public double bread {
             get {
                 return _bread;
             }
         }
 
-        public int breadPrice()
+        public double breadPrice()
         {
-            if (breadNumber == 1)
+            if (breadNumber <= 2)
             {
-                return 5;
+                return breadNumber * _bread;
             } else 
             {
-                Console.WriteLine("TODAY ONLY! 2 for 1");
-                return breadNumber * 2;
+                Console.WriteLine("your discounted price is: ");
+                return ((breadNumber % 3) * _bread) - 5;
             }
         }
 
