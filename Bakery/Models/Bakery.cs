@@ -5,6 +5,9 @@ namespace Bakery.TheBakery
 {
     public class Bread
     {
-        
+        public void Test() 
+        {
+            Console.WriteLine("Bread test");
+        }
     }
 }
