@@ -22,9 +22,6 @@ namespace ToDoList.Tests
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
     [TestMethod]
-    public void TestMethod()
-    {
-      Console.WriteLine("test of a test");
-    }
+    
   }
 }

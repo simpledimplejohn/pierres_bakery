@@ -8,6 +8,7 @@ namespace Bakery.ThePastry
         public void Test() 
         {
             Console.WriteLine("Pastry Class Works!");
+            Console.WriteLine("next");
         }
     }
 }
