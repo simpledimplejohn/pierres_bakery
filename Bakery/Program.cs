@@ -18,10 +18,7 @@ namespace Bakery
       //Console.WriteLine("Our Pastries cost " + 2 + " dollars");
       Console.WriteLine("How many loaves of bread would you like to buy?");
       newBread.breadNumber = Convert.ToInt32(Console.ReadLine());
-      
-      //Console.WriteLine("Your total is " + newBread.breadPrice() + " dollars");
-      //Console.WriteLine("also" + newBread.breadNumber * 5);
-      Console.WriteLine("bread rembainder of 3 = " + Math.Floor(newBread.breadNumber) );
+      Console.WriteLine("Your total is " + newBread.breadPrice() + " dollars");
     }
   }
 }

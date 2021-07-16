@@ -26,8 +26,7 @@ namespace Bakery.TheBread
                 return breadNumber * _bread;
             } else 
             {
-                Console.WriteLine("your discounted price is: ");
-                return ((breadNumber % 3) * _bread) - 5;
+                return ((breadNumber * _bread) - (Math.Floor(breadNumber / 3 ) * _bread));
             }
         }
 
