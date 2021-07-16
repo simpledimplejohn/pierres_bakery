@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Bakery.TheBakery
+namespace Bakery.TheBread
 {
     public class Bread
     {
