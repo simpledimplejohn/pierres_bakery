@@ -21,7 +21,15 @@ namespace Bakery.TheBread
 
         public int breadPrice()
         {
-            return breadNumber * _bread;
+            if (breadNumber == 1)
+            {
+                return 5;
+            } else 
+            {
+                Console.WriteLine("TODAY ONLY! 2 for 1");
+                return breadNumber * 2;
+            }
         }
+
     }
 }
