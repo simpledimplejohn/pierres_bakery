@@ -7,7 +7,7 @@ namespace Bakery.TheBakery
     {
         public void Test() 
         {
-            Console.WriteLine("Bread test");
+            Console.WriteLine("works");
         }
     }
 }

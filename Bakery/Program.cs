@@ -7,9 +7,8 @@ namespace Bakery
   {
     static void Main()
     {
-      Bread newBread new Bread();
-      
-
+      Bread newBread = new Bread();
+      newBread.Test();
     }
   }
 }
