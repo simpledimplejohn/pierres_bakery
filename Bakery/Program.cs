@@ -14,11 +14,11 @@ namespace Bakery
       newPastry.Test();
       Console.WriteLine("Welcome to Pier's Bakery!");
       Console.WriteLine("We have Bread and Pastries");
-      Console.WriteLine("Our Bread cost " + newBread.breadPrice + " dollars");
+      Console.WriteLine("Our Bread cost " + newBread.bread + " dollars");
       Console.WriteLine("Our Pastries cost " + 2 + " dollars");
       Console.WriteLine("How many loaves of bread would you like to buy?");
       newBread.breadNumber = Convert.ToInt32(Console.ReadLine());
-      Console.WriteLine("You want " + newBread.breadNumber + " loaves of bread");
+      Console.WriteLine("Your total is " + newBread.breadPrice() + " dollars");
     }
   }
 }

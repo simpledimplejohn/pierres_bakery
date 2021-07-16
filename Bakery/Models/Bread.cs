@@ -7,16 +7,21 @@ namespace Bakery.TheBread
     {
         public int breadNumber { get; set; }
 
-        private int _breadPrice = 5;
+        private int _bread = 5;
         public void Test() 
         {
             Console.WriteLine("Bread Class Works!");
 
         }
-        public int breadPrice {
+        public int bread {
             get {
-                return _breadPrice;
+                return _bread;
             }
+        }
+
+        public int breadPrice()
+        {
+            return breadNumber * _bread;
         }
     }
 }
