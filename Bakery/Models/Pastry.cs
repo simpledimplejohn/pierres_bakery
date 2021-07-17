@@ -7,7 +7,7 @@ namespace Bakery.ThePastry
     {
         public double pastryCalcPrice(double pastryNumber, double pastryPrice, double pastryDiscount)
         {
-            return (Math.Floor(pastryNumber / pastryPrice) * pastryDiscount) + ((pastryNumber % 3) * pastryPrice);
+            return (Math.Floor(pastryNumber / 3) * pastryDiscount) + ((pastryNumber % 3) * pastryPrice);
         }
     }
 }
