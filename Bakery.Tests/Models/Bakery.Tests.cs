@@ -38,5 +38,12 @@ namespace Bakery.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(0, newBread.breadCalcPrice(0, 5));
     }
+
+    [TestMethod]
+    public void DoesBread_CalculatePriceForOne()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(5, newBread.breadCalcPrice(1, 5));
+    }
   }
 }
