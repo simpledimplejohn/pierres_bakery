@@ -5,24 +5,9 @@ namespace Bakery.ThePastry
 {
     public class Pastry
     {
-        public double pastryNumber { get; set; }
-        private double _pastryPrice = 3;
-        private double _pastryDiscount = 5;
-
-        public double pastryPrice {
-            get {
-                return _pastryPrice;
-            }
-        }
-        public double pastryDiscount {
-            get {
-                return _pastryDiscount;
-            }
-        }
-
-        public double pastryCalcPrice()
+        public double pastryCalcPrice(double pastryNumber, double pastryPrice, double pastryDiscount)
         {
-            return (Math.Floor(pastryNumber / _pastryPrice) * _pastryDiscount) + ((pastryNumber % 3) * 2);
+            return (Math.Floor(pastryNumber / pastryPrice) * pastryDiscount) + ((pastryNumber % 3) * pastryPrice);
         }
     }
 }
