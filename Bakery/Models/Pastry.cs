@@ -5,10 +5,11 @@ namespace Bakery.ThePastry
 {
     public class Pastry
     {
-        public void Test() 
+        private double pastryNumber { get; set; }
+
+        public double pastryPrice()
         {
-            Console.WriteLine("Pastry Class Works!");
-            Console.WriteLine("next");
+            return (Math.Floor(pastryNumber / 3) * 5) + ((pastryNumber % 3) * 2);
         }
     }
 }
