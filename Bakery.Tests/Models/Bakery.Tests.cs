@@ -109,6 +109,7 @@ namespace Bakery.Tests
       newBakery.pastryNumber = 1;
       Assert.AreEqual(2 , newBakery.customerCalculation());
     }
+
     [TestMethod]
     public void DoesBakery_CalculatePriceOneBreadZeroPastry()
     {
@@ -116,6 +117,15 @@ namespace Bakery.Tests
       newBakery.breadNumber = 1;
       newBakery.pastryNumber = 0;
       Assert.AreEqual(5, newBakery.customerCalculation());
+    }
+
+    [TestMethod]
+    public void DoesBakery_CalculatePrice12BreadZero21Pastry()
+    {
+      RunBakery newBakery = new RunBakery(5, 2, 5);
+      newBakery.breadNumber = 12;
+      newBakery.pastryNumber = 21;
+      Assert.AreEqual(75, newBakery.customerCalculation());
     }
   }
 }
