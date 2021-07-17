@@ -66,5 +66,13 @@ namespace Bakery.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(40, newBread.breadCalcPrice(12, 5));
     }
+
+
+    [TestMethod]
+    public void DoesPastry_CalculatePriceForZero()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(0, newPastry.pastryCalcPrice(0, 2, 5));
+    }
   }
 }
