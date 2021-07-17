@@ -17,7 +17,7 @@ namespace Bakery
       Console.WriteLine("Our pastries are $2 or 3 for $5");
       Console.WriteLine("How many pastries would you like to buy?");
       newPastry.pastryNumber = Convert.ToInt32(Console.ReadLine());
-      Console.WriteLine("Your total is $" + (newBread.breadPrice() + newPastry.pastryPrice()));
+      Console.WriteLine("Your total is $" + (newBread.breadCalcPrice() + newPastry.pastryCalcPrice()));
     }
   }
 }

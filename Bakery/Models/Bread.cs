@@ -19,7 +19,7 @@ namespace Bakery.TheBread
             }
         }
 
-        public double breadPrice()
+        public double breadCalcPrice()
         {
             if (breadNumber <= 2)
             {

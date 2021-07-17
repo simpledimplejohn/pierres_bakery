@@ -9,7 +9,7 @@ namespace ToDoList.Tests
   public class ItemTests
   {
 
-    [TestMethod]  // delcalre method as test method
+    [TestMethod]  // declared method as test method
     public void ItemConstructor_CreatesInstanceOfBread_Bread()
     {
       Bread newBread = new Bread();
