@@ -9,8 +9,8 @@ namespace Bakery.TheBakery
     Bread newBread = new Bread();
     Pastry newPastry = new Pastry();
     public double _breadPrice { get; }
-    private double _pastryPrice { get; }
-    private double _pastryDiscount { get; }
+    public double _pastryPrice { get; }
+    public double _pastryDiscount { get; }
     public double breadNumber { get; set; }
     public double pastryNumber { get; set; }
 
