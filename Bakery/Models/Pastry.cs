@@ -5,7 +5,7 @@ namespace Bakery.ThePastry
 {
     public class Pastry
     {
-        private double pastryNumber { get; set; }
+        public double pastryNumber { get; set; }
 
         public double pastryPrice()
         {
