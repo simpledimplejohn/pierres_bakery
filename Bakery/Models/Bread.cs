@@ -4,29 +4,14 @@
 namespace Bakery.TheBread
 {
     public class Bread
-    {
-        public double breadNumber { get; set; }
-
-        private double _bread = 5;
-        public void Test() 
-        {
-            Console.WriteLine("Bread Class Works!");
-
-        }
-        public double bread {
-            get {
-                return _bread;
-            }
-        }
-
-        public double breadCalcPrice()
+    {        public double breadCalcPrice(double breadNumber, double breadPrice)
         {
             if (breadNumber <= 2)
             {
-                return breadNumber * _bread;
+                return breadNumber * breadPrice;
             } else 
             {
-                return ((breadNumber * _bread) - (Math.Floor(breadNumber / 3 ) * _bread));
+                return ((breadNumber * breadPrice) - (Math.Floor(breadNumber / 3 ) * breadPrice));
             }
         }
 
