@@ -94,5 +94,11 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry();
       Assert.AreEqual(5, newPastry.pastryCalcPrice(3, 2, 5));
     }
+    [TestMethod]
+    public void DoesPastry_CalculatePriceForTwentyOne()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(35, newPastry.pastryCalcPrice(21, 2, 5));
+    }
   }
 }
