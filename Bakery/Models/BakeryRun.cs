@@ -14,22 +14,16 @@ namespace Bakery.TheBakery
     public double breadNumber { get; set; }
     public double pastryNumber { get; set; }
 
-    public double customerPrice { get; set; }
-    // public double BreadPrice {
-    //   get {
-    //     return _BreadPrice;
-    //   }
-    // }
     public RunBakery(double breadPrice, double pastryPrice, double pastryDiscount)
     {
       _breadPrice = breadPrice;
       _pastryPrice = pastryPrice;
       _pastryDiscount = pastryDiscount;
     }
-    public void customerCalculation() 
+    public double customerCalculation() 
     {
-      customerPrice = 
-      newBread.breadCalcPrice(breadNumber, _breadPrice) + 
+      return 
+      newBread.breadCalcPrice(breadNumber, _breadPrice) +
       newPastry.pastryCalcPrice(pastryNumber, _pastryPrice, _pastryDiscount);
     }
   }
